@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viora</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+
+        
+        
+       <button id="menu-b">
+        <img src="img/menu.jpeg" width="35px">
+       </button>
+       <div   id="menu_lateral"  class="menu_lateral">
+        <button id="fechar">&times;</button>
+        <a href="view/moda.html">Moda</a>
+        <a href="view/Beleza.html">Beleza</a>
+        <a href="view/esportes.html">Esportes</a>
+        <a href="view/tecnologia.html">Tecnologia</a>
+        
+        </div>
+       <div class="menu_principal">
+        <div class="men">
+            <h1 style="color:#734D49;">Viora <br><span style="color: black;">Insights</span></h1>
+        </div>
+
+        <nav class="links">
+            <a href="view/home.html">Home</a>
+            <a href="view/login.html">Login</a>
+            <a href="view/cadastro.html">Cadastro</a>
+        </nav>
+       </div>
+    </header>
+
+    <div id="rolar">
+        <marquee  behavior="scroll"  direction="left" style="color: #CAA84E;">Últimas notícias, fique por dentro dos acontecimentos da semana!</marquee>
+    </div>
+
+    <hr style="border: 1px solid #00000052;">
+    <div id="destaque">
+
+        <br>
+        <div>
+            <img src="img/logoModa.jpg" width="500px" id="logo">
+            
+        </div>
+        <br>
+        <div class="breaking">
+            <h2>Breaking News</h2>
+        </div>
+        <div class="noticias">
+            <div class="card">
+              <img src="img/meditaçãoguiada.jpg">
+              <div class="card_container">
+                <h3>"Meditação guiada nos hotéis de luxo está em alta"</h3>
+                <p>Hotéis de luxo ao redor do mundo estão oferecendo meditações guiadas e programas de bem-estar exclusivos para seus hóspedes.</p>
+                <a href="view/estilo.html">Leia mais</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/festivalgastronomico.jpg">
+              <div class="card_container">
+                <h3>"Festival gastronômico noturno reúne cultura e sabores locais"</h3>
+                <p>Um festival gastronômico noturno está acontecendo em uma cidade vibrante, misturando comida de rua e apresentações culturais. Chefs renomados e artistas locais criam uma experiência única para os participantes.</p>
+                <a href="view/culinaria.html">Leia mais</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/oscar2025.jpg">
+              <div class="card_container">
+                <h3>"Oscar 2025: A grande noite das estruturas e famosos"</h3>
+                <p>A cerimônia do Oscar 2025 reuniu estrelas de Hollywood para celebrar os melhores filmes e performances do ano. Durante o evento, nomes como Rihanna e Dwayne "The Rock" Johnson brilharam no palco, enquanto outros artistas, como Lady Gaga e Timothée Chalamet, foram premiados nas principais categorias.</p>
+                <a href="view/eventos.html">Leia mais</a>
+              </div>
+            </div>
+          
+           
+         
+            
+          </div>
+        <div class="tabela">
+            <table>
+                <caption style="font-weight: bold;">Celebridade em Destaque: <br><span id="polemica">Polêmicas e Investigações</span></caption>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Notícias</th>
+                        <th>Resumo</th>
+                        <th>Imagem</th>
+            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Setembro 2024</td>
+                        <td>Caso P.Diddy</td>
+                        <td>O rapper foi preso sob acusações de tráfico sexual, abuso e extorsão, o caso abalou a indústria musical.</td>
+                        <td><img src="img/p.diddy.webp" width="65px"></td>
+                    </tr>
+                    <tr>
+                        <td>Dezembro 2024</td>
+                        <td>Deolane Bezerra</td>
+                        <td>A advogada e influenciadora esteve envolvida em disputas públicas e questões juridiciais.</td>
+                        <td><img src="img/202975.jpeg" width="65px"></td>
+                    </tr>
+                    <tr>
+                        <td>Agosto 2023</td>
+                        <td>Neymar Jr.</td>
+                        <td>O jogador estava envolvido em polêmicas de suposta traição< enquanto sua parceira, Bruna Biancardi estava grávida.</td>
+                        <td><img src="img/neymar.webp" width="65px"></td>
+                    </tr>
+                    <tr>
+                        <td>Janeiro 2023</td>
+                        <td>Shakira e Gerard Piqué</td>
+                        <td>A cantora e o jogador enfrentaram um término conturbado, com rumores de traição por parte de Piqué.</td>
+                        <td><img src="img/shakira.webp" width="65px"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       <main>
+        <div id="news">
+            <h2>Envie aqui sua notícia também!</h2>
+            <input type="text" id="news_titulo" placeholder="Título da notícia">
+            <textarea  id="news_escrever" placeholder="Escreva sua notícia..."></textarea>
+            <br>
+            <button onclick="adicionarnews()">Enviar</button>
+           
+            <h3 style="font-weight: bold; font-style: italic;">Últimas Notícias:</h3>
+            <div id="news_lista"></div>
+        </div>
+       </main>
+       
+     
+
+ 
+
+   <footer>
+
+    <div id="icones">
+        <a href=""><img src="img/icone_tel.png" class="icone"></a>
+        <a href=""><img src="img/icone_email.png" class="icone"></a>
+        <a href=""><img src="img/icone_face.png" class="icone"></a>
+        
+        
+        <p class="footer">
+            &copy; 2025 Viora. Todos os direitos reservados.
+        </p>
+    </div>
+    
+   </footer>
+  
+
+    <script src="script/index.js"></script>
+</body>
+</html>
